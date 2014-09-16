@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="lightgreen">#7cd12e</color>
+    <color name="ltgray">#ffcccccc</color>
+    <color name="trblue">#55445544</color>
+    <color name="red2">#667f0000</color>
+    <color name="ltblue">#774444aa</color>
+    <color name="bg_blue">#ff072873</color>
+    <color name="edge_blue">#ff8fc7ea</color>
+    <color name="green">#44007f00</color>
+
+    <dimen name="grid_item_view_size">48dp</dimen>
+    <dimen name="grid_view_higth">116dp</dimen>
+    <dimen name="elements_width">72px</dimen>
+    <dimen name="elements_height">64px</dimen>
+
+</resources>

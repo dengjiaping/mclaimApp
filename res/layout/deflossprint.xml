@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/deflossprint_ll"
+        android:background="@drawable/deflossprint_bg"
+        android:scrollbars="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/deflosssureinfo"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="@string/star_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_deflossinstitution_label"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/deflossinstitution"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_deflossinstitution"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/deflossprint_tv_deflossinstitution_label"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/deflossprint_tv_deflossinstitution_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_deflossstaff_label"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/deflossprint_tv_deflossinstitution"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/deflossstaff"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_deflossstaff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/deflossprint_tv_deflossinstitution"
+                    android:layout_alignTop="@+id/deflossprint_tv_deflossstaff_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_reportno_label"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/deflossprint_tv_deflossstaff_label"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/reportno"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_reportno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/deflossprint_tv_deflossstaff"
+                    android:layout_alignTop="@+id/deflossprint_tv_reportno_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_policyno_ctali_label"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/deflossprint_tv_reportno_label"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/policyno_ctali"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_policyno_ctali"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/deflossprint_tv_deflossstaff"
+                    android:layout_alignTop="@+id/deflossprint_tv_policyno_ctali_label"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_policyno_business_label"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/deflossprint_tv_policyno_ctali_label"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/policyno_business"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_policyno_business"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/deflossprint_tv_deflossstaff"
+                    android:layout_alignTop="@+id/deflossprint_tv_policyno_business_label"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_insurant_label"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/deflossprint_tv_policyno_business_label"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/insurant"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_insurant"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/deflossprint_tv_deflossstaff"
+                    android:layout_alignTop="@+id/deflossprint_tv_insurant_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_deflosstarget_label"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/deflossprint_tv_insurant_label"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/deflosstarget"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_deflosstarget"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/deflossprint_tv_deflossstaff"
+                    android:layout_alignTop="@+id/deflossprint_tv_deflosstarget_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_brandmodel_label"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/deflossprint_tv_deflosstarget_label"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/brandmodel"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_brandmodel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/deflossprint_tv_deflossstaff"
+                    android:layout_alignTop="@+id/deflossprint_tv_brandmodel_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_vincode_label"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/deflossprint_tv_brandmodel_label"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/vincode"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_vincode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/deflossprint_tv_deflossstaff"
+                    android:layout_alignTop="@+id/deflossprint_tv_vincode_label"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="@string/replaceinfo"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="@string/star_line" />
+
+            <TableLayout
+                android:id="@+id/defloss_tl_replace"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:collapseColumns="3"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="@string/repairinfo"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="@string/star_line" />
+
+            <TableLayout
+                android:id="@+id/defloss_tl_repair"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="@string/deflossmoney"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="@string/star_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_replace_total_label"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/replace_total"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_replace_total"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/deflossprint_tv_replace_total_label"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/deflossprint_tv_replace_total_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_repair_total_label"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deflossprint_tv_replace_total_label"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/repair_total"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_repair_total"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/deflossprint_tv_replace_total"
+                    android:layout_alignTop="@+id/deflossprint_tv_repair_total_label"
+                    android:layout_toRightOf="@+id/deflossprint_tv_repair_total_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_scrap_value_label"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deflossprint_tv_repair_total_label"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/scrap_value"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_scrap_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/deflossprint_tv_replace_total"
+                    android:layout_alignTop="@+id/deflossprint_tv_scrap_value_label"
+                    android:layout_toRightOf="@+id/deflossprint_tv_scrap_value_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_deflosstotalmoney_label"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deflossprint_tv_scrap_value_label"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/deflosstotalmoney"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_deflosstotalmoney"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/deflossprint_tv_deflosstotalmoney_label"
+                    android:layout_alignLeft="@+id/deflossprint_tv_replace_total"
+                    android:layout_toRightOf="@+id/deflossprint_tv_deflosstotalmoney_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_bigletter_label"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deflossprint_tv_deflosstotalmoney_label"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/bigletter"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_bigletter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/deflossprint_tv_bigletter_label"
+                    android:layout_alignLeft="@+id/deflossprint_tv_replace_total"
+                    android:layout_toRightOf="@+id/deflossprint_tv_bigletter_label"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_printdate_label"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deflossprint_tv_bigletter_label"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/printdate"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/deflossprint_tv_printdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/deflossprint_tv_printdate_label"
+                    android:layout_alignLeft="@+id/deflossprint_tv_replace_total"
+                    android:layout_toRightOf="@+id/deflossprint_tv_printdate_label"
+                    android:text="@string/printdate"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/deflossprint_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/deflossprint_cb_bluetoothprint"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" 
+                android:button="@android:drawable/checkbox_off_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bluetoothprint"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/deflossprint_cb_smsnotice"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" 
+                android:button="@android:drawable/checkbox_off_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/smsnotice"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/deflossprint_btn_ok"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_blue_style"
+            android:text="@string/btn_confirm"
+            android:textColor="@android:color/white" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

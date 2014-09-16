@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- haoyun -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/clci_btn_customer_information"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/customer_information" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="定损确认信息"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="定损总金额：" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10520元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+		
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="车牌号"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="京GBK322"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="报案号"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="887319238814333923"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13151314986"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="换件金额"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8000.00元"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="维修金额(工时)"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2300元"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="拆残总金额"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00元"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="管理费"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00元"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="施救费"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00元"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="总残值"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00元"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="修理厂信息"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="奥迪4S维修厂"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="换件明细"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:contentDescription="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/clci_lv_change"
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tasks_openbg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_tv"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="报案号"
+                    android:textColor="#066C78"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_baoan_no"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/deflossbasic_caseinfo_listview_item_tv" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_tv_assured"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="被保险人"
+                    android:textColor="#066C78"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_assured"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/deflossbasic_caseinfo_listview_item_tv_assured" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_tvcarno"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="号牌号码"
+                    android:textColor="#066C78"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_carno"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/deflossbasic_caseinfo_listview_item_tvcarno" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_tvfactory"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="厂牌型号"
+                    android:textColor="#066C78"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_factory"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/deflossbasic_caseinfo_listview_item_tvfactory" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_tv_reasontime"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="出险时间"
+                    android:textColor="#066C78"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_reasontime"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/deflossbasic_caseinfo_listview_item_tv_reasontime" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_tv_time"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="报案时间"
+                    android:textColor="#066C78"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_time"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/deflossbasic_caseinfo_listview_item_tv_time" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_tv_address"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="出险地点"
+                    android:textColor="#066C78"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_address"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/deflossbasic_caseinfo_listview_item_tv_address" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_tv_driver"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="驾驶员"
+                    android:textColor="#066C78"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_driver"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/deflossbasic_caseinfo_listview_item_tv_driver" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:id="@+id/deflossbasic_caseinfo_listview_item_rl_claimnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_tv_claimnumber"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="出险提示"
+                    android:textColor="#066C78"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_claimnumber"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/deflossbasic_caseinfo_listview_item_tv_claimnumber" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:id="@+id/deflossbasic_caseinfo_listview_item_rl_starttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_tv_starttime"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="距保险起期"
+                    android:textColor="#066C78"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/deflossbasic_caseinfo_listview_item_starttime"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/deflossbasic_caseinfo_listview_item_tv_starttime" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

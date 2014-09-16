@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <ListView
+        android:id="@+id/bluetooth_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:cacheColorHint="@android:color/transparent" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/bluetooth_btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/is_positive" 
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_blue_style"
+            style="?android:attr/button"
+            />
+
+        <Button
+            android:id="@+id/bluetooth_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/btn_cancel" 
+            android:textColor="@android:color/white"
+           	android:background="@drawable/btn_blue_style"
+           	style="?android:attr/button"
+            />
+    </LinearLayout>
+</LinearLayout>

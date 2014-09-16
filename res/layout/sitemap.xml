@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_window_scene"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+		<RelativeLayout 
+		    android:id="@+id/sitemap_lay_plate"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/head_bg"
+		    android:layout_alignParentTop="true">
+		    <Button 
+		        android:id="@+id/sitemap_btn_back"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/head_back_bg"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="10dp" />
+		    <TextView
+		        android:id="@+id/tv_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:textColor="@android:color/black"
+		        android:text="现场草图"
+		        android:textSize="@dimen/text_size_big"/>
+		</RelativeLayout>
+	    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" 
+            android:orientation="horizontal"
+	    	android:layout_marginTop="0dp">
+
+            <com.sinosoftyingda.fastclaim.sketchmap.view.StandTableView
+                android:id="@+id/StandTableView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:alwaysDrawnWithCache="true"
+                android:background="@color/white"
+                android:clipChildren="true" />
+        </LinearLayout>
+        <!-- road -->
+
+        <LinearLayout
+            android:id="@+id/roads_bar_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/more_list_bg" 
+            android:orientation="horizontal" >
+
+            <com.sinosoftyingda.fastclaim.sketchmap.view.XHorizontalScrollView
+                android:id="@+id/HorizontalScrollView"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:fillViewport="true"
+                android:scrollbars="horizontal" >
+                <LinearLayout
+                    android:id="@+id/roads_element_tool_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </com.sinosoftyingda.fastclaim.sketchmap.view.XHorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/roads_reset_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_gray"
+                    android:gravity="center"
+                    android:minWidth="78dp"
+                    android:text="@string/reset_btn_label"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_middle"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Other tools -->
+        <LinearLayout
+            android:id="@+id/general_bar_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/more_list_bg" 
+            android:orientation="horizontal" >
+
+            <com.sinosoftyingda.fastclaim.sketchmap.view.XHorizontalScrollView
+                android:id="@+id/HorizontalScrollView"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:fillViewport="true" >
+
+                <LinearLayout
+                    android:id="@+id/general_element_tool_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </com.sinosoftyingda.fastclaim.sketchmap.view.XHorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/general_reset_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_gray_click"
+                    android:gravity="center"
+                    android:minWidth="78dp"
+                    android:text="@string/reset_btn_label"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_middle"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <AbsoluteLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- FrameLayout -->
+        <FrameLayout
+            android:id="@+id/floated_drag_element_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+           >
+            <ImageView
+                android:id="@+id/floated_drag_element_icon_view"
+                android:layout_width="@dimen/elements_width"
+                android:layout_height="@dimen/elements_height"
+                android:src="@drawable/text_icon"
+                android:scaleType="centerInside"
+                 />
+            <ImageView
+                android:id="@+id/floated_drag_element_matte_view"
+                android:layout_width="@dimen/elements_width"
+                android:layout_height="@dimen/elements_height"
+                android:background="#557f0000"
+            />
+        </FrameLayout>
+    </AbsoluteLayout>
+
+</FrameLayout>

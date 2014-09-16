@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/third_boxbgtop"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/leftimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/title_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/leftimg"
+                android:text="撰写留言内容" />
+
+            <Button
+                android:id="@+id/button_submit_leavemessage"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/btn_blue_style"
+                android:gravity="center"
+                android:text="提交留言"
+                android:textColor="#ffffff"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/third_boxbgbottom"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/leavemsg_registNo_name"
+                    style="@style/word_list_item_textview_title_style"
+                    android:layout_marginTop="20dp"
+                    android:text="报案号"
+                    android:width="70dp" />
+
+                <TextView
+                    android:id="@+id/leavemsg_registNo_num"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/leavemsg_registNo_name"
+                    android:text="R000000" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/leavemsg_time_name"
+                    style="@style/word_list_item_textview_title_style"
+                    android:layout_marginTop="20dp"
+                    android:text="提交时间"
+                    android:width="70dp" />
+
+                <TextView
+                    android:id="@+id/leavemsg_time_value"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/leavemsg_time_name"
+                    android:text="2013/01/12" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/leavemsg_nodetype_name"
+                    style="@style/word_list_item_textview_title_style"
+                    android:layout_marginTop="20dp"
+                    android:text="节点类型"
+                    android:width="70dp" />
+
+                <TextView
+                    android:id="@+id/leavemsg_nodetype_value"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/leavemsg_nodetype_name"
+                    android:text="调度" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/leavemsg_person_name"
+                    style="@style/word_list_item_textview_title_style"
+                    android:layout_marginTop="20dp"
+                    android:text="留言人"
+                    android:width="70dp" />
+
+                <TextView
+                    android:id="@+id/leavemsg_person_value"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/leavemsg_person_name"
+                    android:text="测试人员——北京" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <EditText
+                android:id="@+id/leavemsg_content_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

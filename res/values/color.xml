@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grey">#FFC5C5C5</color> <!-- 灰色 -->
+    <color name="white">#FFFFFFFF</color> <!-- 白色 -->
+    <color name="black">#FF000000</color> <!-- 黑色 -->
+    <color name="bg_grey">#E0E0E0</color>
+    <color name="blue">#417DCE</color> <!-- 蓝色 -->
+    <color name="appbgcolor">#f6f6f6</color> <!-- 应用背景颜色 -->
+    <color name="textthin">#77000000</color> <!-- 字体淡色 -->
+	<color name="darker_grey">#FF666666</color>
+	<color name="light_green">#066C78</color><!-- 浅绿色 -->
+</resources>

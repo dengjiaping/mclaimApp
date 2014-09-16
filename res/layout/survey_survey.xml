@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbgcolor" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/survey_survey_btn_record"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/tasks_first" >
+
+            <TextView
+                style="@style/survery_textview_style"
+                android:layout_centerVertical="true"
+                android:text="查勘记录" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/icon_close_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/survey_survey_record_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_opene" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/survey_survey_record_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/survey_survey_btn_mainpoint"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/tasks_first" >
+
+            <TextView
+                style="@style/survery_textview_style"
+                android:layout_centerVertical="true"
+                android:text="查勘要点" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/more"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/survey_survey_btn_caseloss"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/tasks_first" >
+
+            <TextView
+                style="@style/survery_textview_style"
+                android:layout_centerVertical="true"
+                android:text="案件渉损" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/icon_close_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/survey_survey_caseloss_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_opene" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/survey_survey_caseloss_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/survey_survey_btn_caseloss"
+            android:visibility="gone" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/survey_survey_btn_contactinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/survey_survey_caseloss_listview"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/tasks_first" >
+
+            <TextView
+                style="@style/survery_textview_style"
+                android:layout_centerVertical="true"
+                android:text="联系信息" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/icon_close_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/survey_survey_contactinfo_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_opene" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/survey_survey_contactinfo_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/survey_survey_btn_contactinfo"
+            android:visibility="gone" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/survey_survey_btn_driverinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/tasks_first" >
+
+            <TextView
+                style="@style/survery_textview_style"
+                android:layout_centerVertical="true"
+                android:text="驾驶人信息" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/icon_close_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/survey_survey_driverinfo_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_opene" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/survey_survey_driverinfo_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/survey_survey_btn_report"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/survey_survey_contactinfo_listview"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/tasks_first" >
+
+            <TextView
+                style="@style/survery_textview_style"
+                android:layout_centerVertical="true"
+                android:text="查勘报告" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/icon_close_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/survey_survey_report_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_opene" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/survey_survey_btn_report_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/survey_survey_btn_report"
+            android:background="@drawable/input_bg"
+            android:gravity="top"
+            android:hint="请输入...."
+            android:inputType="textMultiLine"
+            android:minHeight="140dp"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/survey_basic_btn_messagesEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/survey_basic_contactinfo_listview"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/tasks_first" >
+
+            <TextView
+                style="@style/survery_textview_style"
+                android:layout_centerVertical="true"
+                android:text="撰写留言" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/more"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/survey_survey_btn_draft"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/survey_survey_btn_report_et"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/tasks_first" >
+
+            <TextView
+                style="@style/survery_textview_style"
+                android:layout_centerVertical="true"
+                android:text="现场草图" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/more"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/survey_survey_btn_sign"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/survey_survey_btn_draft"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/tasks_first" >
+
+            <TextView
+                style="@style/survery_textview_style"
+                android:layout_centerVertical="true"
+                android:text="手写签名" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/more"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/survey_survey_btn_sign"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/survery_textview_style"
+                android:layout_marginTop="10dp"
+                android:text="@string/satisfaction" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/satisfaction_bg" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/survey_lay_2"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/survey_survey_satisfaction_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/checklist_face1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/satisfaction_4"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/survey_lay_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/survey_survey_satisfaction_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/checklist_face2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/satisfaction_2"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/survey_lay_2"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/survey_survey_satisfaction_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/checklist_face4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/satisfaction_1"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

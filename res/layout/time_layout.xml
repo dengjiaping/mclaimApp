@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg" >
+
+    <LinearLayout
+       
+        android:id="@+id/timePicker1"
+        android:layout_width="320dip"
+        android:layout_height="200dip"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp" >
+
+        <com.sinosoftyingda.fastclaim.common.ui.wheel.WheelView
+            android:id="@+id/year"
+            android:layout_width="115dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <com.sinosoftyingda.fastclaim.common.ui.wheel.WheelView
+            android:id="@+id/month"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content" />
+
+        <com.sinosoftyingda.fastclaim.common.ui.wheel.WheelView
+            android:id="@+id/day"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:layout_marginTop="12dp" >
+
+        <Button
+            android:id="@+id/btn_datetime_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/btn_blue"
+            android:text="确定" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_datetime_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/btn_blue"
+            android:text="取消" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <ImageView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/satisfaction_bg"
+	    android:layout_marginTop="65dp" />
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_toLeftOf="@+id/survey_lay_2"
+	        android:layout_centerVertical="true" >
+		    <ImageView
+		        android:id="@+id/survey_survey_satisfaction_1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:background="@drawable/checklist_face1" />
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/satisfaction_4"
+		        android:textColor="#000000"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="10dp" />
+	    </LinearLayout>
+	    <LinearLayout 
+		    android:id="@+id/survey_lay_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_centerVertical="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp">
+		    <ImageView
+		        android:id="@+id/survey_survey_satisfaction_2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:background="@drawable/checklist_face2" />
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/satisfaction_2"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="10dp" 
+		        android:textColor="#000000" />
+		</LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_toRightOf="@+id/survey_lay_2"
+	        android:layout_centerVertical="true">
+		    <ImageView
+		        android:id="@+id/survey_survey_satisfaction_3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:background="@drawable/checklist_face4" />
+		    
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="10dp" 
+		        android:text="@string/satisfaction_1"
+		        android:textColor="#000000" />
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

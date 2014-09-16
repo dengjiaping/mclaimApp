@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- SDCARD -->
+	<integer name="save_img_quality">60</integer>
+	<!-- Image format png/jpeg -->
+	<string name="save_img_format">png</string>
+	<!-- scale -->
+	<integer name="image_max_scale">400</integer>
+	<integer name="image_min_scale">25</integer>
+	<integer name="image_min_scale_display_size">160</integer>
+	
+	<!-- virbrate time -->
+    <integer name="virbrate_time">100</integer>
+	
+	<string name="asset_input_text_name">text_icon.png</string>
+	<!-- SaveFileName -->
+	<string name="save_file_name">test</string>
+    <string name="input_text_hint">点击输入</string>
+    <string name="reset_btn_label">重置</string>
+    
+	<string name="tip_error_path">图片存储路径错误</string>
+	<string name="tip_error_create_image">图片创建失败</string>
+	<string name="tip_save_image_ok">图片生成OK</string>
+	<string name="tip_error_sdcard_unavailable">SDcard不可用</string>
+</resources>

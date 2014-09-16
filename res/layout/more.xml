@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbgcolor" >
+
+    
+    <RelativeLayout
+        android:id="@+id/moreactivity_ll_state2"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/more_list_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/more_imv1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/more_user" />
+
+        <TextView
+            android:id="@+id/moreactivity_ll_state2_name"
+            style="@style/moreactivity_style_textview"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/more_imv1"
+            android:text="周晓云" />
+
+        <TextView
+            android:id="@+id/moreactivity_ll_state2_name_jigou"
+            style="@style/moreactivity_style_textview"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/moreactivity_ll_state2_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/moreactivity_ll_state"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/moreactivity_ll_state2"
+        android:background="@drawable/more_list_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/more_imv1"
+            style="@style/moreactivity_style_imageview"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/more_status" />
+
+        <TextView
+            style="@style/moreactivity_style_textview"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/more_imv1"
+            android:text="我的状态" />
+
+        <com.sinosoftyingda.fastclaim.common.ui.utils.MySlipSwitch
+            android:id="@+id/moreactivity_ll_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/moreactivity_ll_login"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/moreactivity_ll_state"
+        android:background="@drawable/more_list_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/moreactivity_style_imageview"
+            android:background="@drawable/more_registration" />
+
+        <TextView
+            style="@style/moreactivity_style_textview"
+            android:layout_marginLeft="20dp"
+            android:text="登录注销" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moreactivity_ll_version"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/moreactivity_ll_login"
+        android:background="@drawable/more_list_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/moreactivity_style_imageview"
+            android:background="@drawable/more_version" />
+
+        <TextView
+            style="@style/moreactivity_style_textview"
+            android:layout_marginLeft="20dp"
+            android:text="检测版本" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moreactivity_ll_offlinedata"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/moreactivity_ll_version"
+        android:background="@drawable/more_list_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/moreactivity_style_imageview"
+            android:background="@drawable/map_offlinedata" />
+
+        <TextView
+            style="@style/moreactivity_style_textview"
+            android:layout_marginLeft="20dp"
+            android:text="离线数据更新" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moreactivity_ll_about"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/moreactivity_ll_offlinedata"
+        android:background="@drawable/more_list_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/moreactivity_style_imageview"
+            android:background="@drawable/more_about" />
+
+        <TextView
+            style="@style/moreactivity_style_textview"
+            android:layout_marginLeft="20dp"
+            android:text="关于" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moreactivity_ll_aboutinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/moreactivity_ll_about"
+        android:background="@drawable/more_list_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/moreactivity_style_imageview"
+            android:background="@drawable/more_aboutinfo" />
+
+        <TextView
+            style="@style/moreactivity_style_textview"
+            android:layout_marginLeft="20dp"
+            android:text="状态信息" />
+    </LinearLayout>
+
+</RelativeLayout>

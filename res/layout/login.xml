@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/welcome_bg" >
+
+    <!-- 中间图标 -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:contentDescription="@null"
+        android:layout_above="@+id/login_btn_confirm"
+        android:src="@drawable/login_mianpic"
+        android:layout_marginBottom="50dp" />
+
+    <!-- 文本输入框 -->
+    <EditText
+        android:id="@+id/login_et_uer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/et_height"
+        android:layout_above="@+id/login_et_pwd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:hint="请输入帐号"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true" />
+
+    <!-- 密码输入框 -->
+    <EditText
+        android:id="@+id/login_et_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/et_height"
+        android:layout_above="@+id/login_btn_confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <!-- 确定 -->
+    <Button
+        android:id="@+id/login_btn_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_above="@+id/login_imv_bottom_logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_button_bg"
+        android:scaleType="matrix" />
+
+    <!-- 底部Logo -->
+    <ImageView
+        android:id="@+id/login_imv_bottom_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ydlogo"
+        android:contentDescription="@null"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    
+</RelativeLayout>

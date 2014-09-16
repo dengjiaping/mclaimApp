@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appbgcolor"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/defloss_basic_btn_caseinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/tasks_first" >
+
+                    <TextView
+                        style="@style/survery_textview_style"
+                        android:layout_centerVertical="true"
+                        android:text="报案信息" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/icon_close_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/defloss_basic_caseinfo_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_opene"
+                            android:contentDescription="@null" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/defloss_basic_caseinfo_listview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+                </ListView>
+
+                <RelativeLayout
+                    android:id="@+id/defloss_basic_btn_surveyinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/tasks_first" >
+
+                    <TextView
+                        style="@style/survery_textview_style"
+                        android:layout_centerVertical="true"
+                        android:text="查勘记录" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/icon_close_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/defloss_basic_imv_surveyinfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_opene" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/defloss_basic_listview_surveyinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+                </ListView>
+
+                <RelativeLayout
+                    android:id="@+id/defloss_basic_btn_mainpoint"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/tasks_first" >
+
+                    <TextView
+                        style="@style/survery_textview_style"
+                        android:layout_centerVertical="true"
+                        android:text="查勘要点" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/more" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/defloss_basic_btn_loss"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/tasks_first" >
+
+                    <TextView
+                        style="@style/survery_textview_style"
+                        android:layout_centerVertical="true"
+                        android:text="案件涉损" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/icon_close_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/defloss_basic_loss_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_opene" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/defloss_basic_loss_listview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/survey_basic_btn_taskinfo"
+                    android:visibility="gone" >
+                </ListView>
+
+                <RelativeLayout
+                    android:id="@+id/defloss_basic_btn_loss_repotr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/tasks_first" >
+
+                    <TextView
+                        style="@style/survery_textview_style"
+                        android:layout_centerVertical="true"
+                        android:text="查勘报告" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/icon_close_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/defloss_basic_loss_ll_repotr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_opene" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/defloss_survey_btn_report_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bg"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:singleLine="false"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/defloss_basic_btn_contact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/tasks_first" >
+
+                    <TextView
+                        style="@style/survery_textview_style"
+                        android:layout_centerVertical="true"
+                        android:text="联系信息" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/icon_close_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/defloss_basic_contact_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_opene" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/defloss_basic_ll_btn_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/tasks_openbg"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp" >
+
+                        <LinearLayout
+                            android:id="@+id/defloss_basic_ll1"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/defloss_basic_assured_tv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="被保险人"
+                                android:textColor="@color/light_green" />
+
+                            <TextView
+                                android:id="@+id/defloss_basic_bailee_tv11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="电话"
+                                android:textColor="@color/light_green" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/defloss_basic_ll1"
+                            android:gravity="left|center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/defloss_basic_assuredname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/text_size_middle" />
+
+                            <TextView
+                                android:id="@+id/defloss_basic_acceptedphone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/text_size_middle" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="#66000000" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp" >
+
+                        <LinearLayout
+                            android:id="@+id/defloss_basic_ll2"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/defloss_basic_bailee_tv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="受托人"
+                                android:textColor="@color/light_green" />
+
+                            <TextView
+                                android:id="@+id/defloss_basic_bailee_tv11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="电话"
+                                android:textColor="@color/light_green" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/defloss_basic_ll2"
+                            android:gravity="left|center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/defloss_basic_bailename"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/text_size_middle" />
+
+                            <TextView
+                                android:id="@+id/defloss_basic_baileephone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/text_size_middle" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/defloss_basic_btn_baodaninfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/survey_basic_taskinfo_listview"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/tasks_first" >
+
+                    <TextView
+                        style="@style/survery_textview_style"
+                        android:layout_centerVertical="true"
+                        android:text="保单信息" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/more"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/defloss_basic_btn_history"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/survey_basic_btn_baodaninfo"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/tasks_first" >
+
+                    <TextView
+                        style="@style/survery_textview_style"
+                        android:layout_centerVertical="true"
+                        android:text="历史赔案" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/more"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/defloss_basic_btn_messagesEditxiepei"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/survey_basic_contactinfo_listview"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/tasks_first" >
+
+                    <TextView
+                        style="@style/survery_textview_style"
+                        android:layout_centerVertical="true"
+                        android:text="撰写留言" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/more"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/defloss_basic_btn_messagesQuery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/survey_basic_contactinfo_listview"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/tasks_first" >
+
+                    <TextView
+                        style="@style/survery_textview_style"
+                        android:layout_centerVertical="true"
+                        android:text="查看留言" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/more"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/defloss_basic_btn_taskinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/survey_basic_caseinfo_listview"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/tasks_first" >
+
+                    <TextView
+                        style="@style/survery_textview_style"
+                        android:layout_centerVertical="true"
+                        android:text="任务信息" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/icon_close_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/defloss_basic_taskinfo_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_opene" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/defloss_basic_listview_taskinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/survey_basic_btn_caseinfo"
+                    android:visibility="gone" >
+                </ListView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/defloss_basic_drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/defloss_main_bottom_drawer" />
+
+</RelativeLayout>

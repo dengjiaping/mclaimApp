@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/report_day_select_group"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/et_style"
+            android:hint="@string/_select_value"
+            android:paddingLeft="5dip"
+            android:paddingRight="25dp"
+            android:singleLine="true"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/report_day_select_group_imbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/report_day_select_group"
+            android:layout_alignRight="@+id/report_day_select_group"
+            android:layout_alignTop="@+id/report_day_select_group"
+            android:background="@drawable/button" />
+    </RelativeLayout>
+
+</RelativeLayout>

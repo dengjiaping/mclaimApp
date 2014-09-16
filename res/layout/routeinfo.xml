@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+	    android:id="@+id/ll"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/head_bg"
+	    android:layout_alignParentTop="true">
+	    <Button 
+	        android:id="@+id/btn_home"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/head_home_bg"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="10dp"
+	        />
+	    <TextView
+	        android:id="@+id/tv_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textColor="@android:color/black"
+	        android:textSize="@dimen/text_size_big"/>
+	</RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/routeinfo_rl_start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:id="@+id/routeinfo_iv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/map_start" />
+
+        <ImageView
+            android:id="@+id/routeinfo_iv_start_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/routeinfo_iv_start"
+            android:layout_toRightOf="@+id/routeinfo_iv_start"
+            android:background="@color/grey"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/routeinfo_tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/routeinfo_iv_start_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/routeinfo_iv_start"
+            android:textSize="@dimen/text_size_middle"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/routeinfo_rl_end"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/routeinfo_rl_start"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:id="@+id/routeinfo_iv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/map_stop" />
+
+        <ImageView
+            android:id="@+id/routeinfo_iv_end_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/routeinfo_iv_end"
+            android:layout_toRightOf="@+id/routeinfo_iv_end"
+            android:background="@color/grey"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/routeinfo_tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/routeinfo_iv_end_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/routeinfo_iv_end"
+            android:textSize="@dimen/text_size_middle" />
+    </RelativeLayout>
+
+    <ListView 
+        android:id="@+id/routeinfo_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/routeinfo_rl_end"
+        android:layout_above="@+id/routeinfo_btn_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/map_routefinfo_lv_bg"
+        android:cacheColorHint="#00000000">
+        
+    </ListView>
+    
+    <Button
+        android:id="@+id/routeinfo_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/map_info_style" />
+
+</RelativeLayout>

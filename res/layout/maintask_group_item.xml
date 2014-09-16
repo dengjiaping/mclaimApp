@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#E4E4E2"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/defloss_maintask_aa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maintask_group_item_claimNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="20"
+                    android:text="R02105072011000600"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <TextView
+                    android:id="@+id/maintask_group_item_ll_3_cattyple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="标的车"
+                    android:textColor="#66000000"
+                    android:textSize="@dimen/text_size_little"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/maintask_group_item_ll_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/maintask_group_item_ll_1_imv"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/baoan" />
+
+                <TextView
+                    android:id="@+id/maintask_group_item_ll_1_name"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:text="hello"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/maintask_group_item_ll_1_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hello"
+                    android:textColor="#66000000"
+                    android:textSize="@dimen/text_size_little" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/maintask_group_item_ll_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <ImageView
+                    android:id="@+id/maintask_group_item_ll_2_imv"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/lianxi" />
+
+                <TextView
+                    android:id="@+id/maintask_group_item_ll_2_name"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:text="hello"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/maintask_group_item_ll_2_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hello"
+                    android:textColor="#66000000"
+                    android:textSize="@dimen/text_size_little" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/maintask_group_item_ll_al"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <ImageView
+                    android:id="@+id/maintask_group_item_ll_2_imv_time"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_timetip" />
+
+                <Chronometer
+                    android:id="@+id/maintask_group_item_ll_2_tv_time"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/maintask_group_item_ll_2_tv_receivetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2013-02-02 12:20:23"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/maintask_group_item_ll_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="被保险人:"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/maintask_group_item_ll_3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hello"
+                    android:maxLength="4"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="车牌号:"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_size_little" />
+
+                <TextView
+                    android:id="@+id/maintask_group_item_ll_3_carno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="hello"
+                    android:maxLength="8"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_size_little" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/maintask_flout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/maintask_btn_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/maintask_btn_bg"
+                android:text="地图" />
+
+            <Button
+                android:id="@+id/maintask_btn_repeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/maintask_btn_bg"
+                android:text="撤消"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/maintask_btn_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/maintask_btn_bg"
+                android:text="打印"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

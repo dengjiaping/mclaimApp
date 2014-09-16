@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="text_size_big">21dp</dimen>
+    <dimen name="text_size_middle">18dp</dimen>
+    <dimen name="text_size_little">15dp</dimen>
+    <dimen name="et_height">40dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/btn_top_ll_tongbu"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:background="@drawable/head_submit_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/btn_top_tongbu_submit"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_gray_style"
+                android:drawableLeft="@drawable/head_iconsubmit"
+                android:text="查勘提交"
+                android:textSize="@dimen/text_size_middle" />
+
+            <Button
+                android:id="@+id/btn_defloss_top_tongbu_submit"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_gray_style"
+                android:drawableLeft="@drawable/head_iconsubmit"
+                android:text="定损提交"
+                android:textSize="@dimen/text_size_middle"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/btn_top_tongbu_tongbu"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_gray_style"
+                android:drawableLeft="@drawable/head_iconsync"
+                android:hint="查勘"
+                android:paddingLeft="13dp"
+                android:text="同步理赔"
+                android:textSize="@dimen/text_size_middle" />
+
+            <Button
+                android:id="@+id/btn_top_tongbu_tongbu_continue"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_gray_style"
+                android:drawableLeft="@drawable/head_iconsync"
+                android:hint="查勘"
+                android:paddingLeft="13dp"
+                android:text="继续操作"
+                android:textSize="@dimen/text_size_middle"
+                />
+
+            <Button
+                android:id="@+id/btn_defloss_top_tongbu_tongbu"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_gray_style"
+                android:drawableLeft="@drawable/head_iconsync"
+                android:hint="定损"
+                android:paddingLeft="13dp"
+                android:text="同步理赔"
+                android:textSize="@dimen/text_size_middle"
+                />
+
+            <Button
+                android:id="@+id/btn_defloss_top_tongbu_tongbu_continue"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_gray_style"
+                android:drawableLeft="@drawable/head_iconsync"
+                android:hint="定损"
+                android:paddingLeft="13dp"
+                android:text="继续操作"
+                android:textSize="@dimen/text_size_middle"
+              />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

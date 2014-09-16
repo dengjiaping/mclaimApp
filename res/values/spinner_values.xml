@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="defloss_sp_dutytype">
+        <item>0-无责</item>
+        <item>100-有责</item>
+    </string-array>
+    <string-array name="defloss_sp_deflosstype">
+        <item>01-修复定损</item>
+        <item>02-推定全损</item>
+        <item>03-一次性协议定损</item>
+    </string-array>
+    <string-array name="defloss_sp_salvageshoptype">
+        <item>01-4S店</item>
+        <item>02-一类厂</item>
+        <item>03-二类厂</item>
+        <item>04-三类厂</item>
+    </string-array>
+    <string-array name="defloss_sp_repairtyps">
+        <item>00-送修</item>
+        <item>01-定点</item>
+        <item>02-自保自修</item>
+    </string-array>
+    <string-array name="defloss_sp_extenttype">
+        <item>01-轻微受损</item>
+        <item>02-轻度受损</item>
+        <item>03-中度受损</item>
+        <item>04-严重受损</item>
+        <item>05-非常严重</item>
+        <item>99-其他</item>
+    </string-array>
+
+    <!-- 工种 -->
+    <string-array name="partlist_sp_dlgtype">
+        <item>01-机电工</item>
+        <item>02-油漆工</item>
+        <item>03-钣金工</item>
+        <item>04-电工</item>
+        <item>05-喷漆</item>
+        <item>06-装饰</item>
+        <item>99-其他</item>
+    </string-array>
+
+    <!-- 修复方式 -->
+    <string-array name="partlist_sp_dlgproject">
+        <item>01-更换</item>
+        <item>02-修理</item>
+        <item>03-校正</item>
+        <item>04-涂漆</item>
+        <item>05-加注</item>
+        <item>99-其他</item>
+    </string-array>
+
+    <!-- 损失情况 -->
+    <string-array name="partlist_sp_losttype">
+        <item>01-破碎</item>
+        <item>02-断裂</item>
+        <item>03-破损</item>
+        <item>04-严重变形</item>
+        <item>05-中度变形</item>
+        <item>06-轻度变形</item>
+        <item>99-其他</item>
+    </string-array>
+
+    <!-- 三者车新车价格 -->
+    <string-array name="defloss_newthreecar_price">
+        <item>A01-小于5万</item>
+        <item>A02-大于5万小于8万</item>
+        <item>A03-大于8万小于12万</item>
+        <item>A04-大于12万小于15万</item>
+        <item>A05-大于15万小于20万</item>
+        <item>A06-大于20万小于25万</item>
+        <item>A07-大于25万小于30万</item>
+        <item>A08-大于30万小于40万</item>
+        <item>A09-大于40万小于50万</item>
+        <item>A10-大于50万小于60万</item>
+        <item>A11-大于60万</item>
+    </string-array>
+
+    <!-- 出险原因  -前面为value后面为code -->
+    <string-array name="occurrence_reason">
+        <item>碰撞-A01</item>
+        <item>倾覆-B02</item>
+        <item>玻璃单独破碎-C03</item>
+        <item>盗抢-D04</item>
+        <item>自然灾害-E05</item>
+        <item>爆炸-F06</item>
+        <item>车载货物掉落责任-G07</item>
+        <item>不明原因被损-H08</item>
+        <item>车身划痕-I09</item>
+        <item>外界物体倒塌或坠落-J10</item>
+        <item>火烧-K11</item>
+    </string-array>
+    <!-- 事故责任  -前面为value后面为code -->
+    <string-array name="accident_responsibility">
+        <item>全责-0</item>
+        <item>主责-1</item>
+        <item>同责-2</item>
+        <item>次责-3</item>
+        <item>无责-4</item>
+    </string-array>
+    <!-- 赔案性质  -前面为value后面为code -->
+    <string-array name="claim_case_properties">
+        <item>一般赔案-0</item>
+        <item>交强险互碰自赔-T</item>
+    </string-array>
+    <string-array name="photos_type">
+        <item>单证照片</item>
+        <item>复勘照片</item>
+        <item>标的车</item>
+        <item>三者车</item>
+        <item>物损</item>
+        <item>人伤</item>
+        <item>现场照片</item>
+    </string-array>
+    <string-array name="threecar_cartype">
+        <item>A0-客车</item>
+        <item>G0-挂车</item>
+        <item>H0-载货机动车</item>
+        <item>J0-拖拉机</item>
+        <item>T1-起重车</item>
+        <item>T2-装卸车</item>
+        <item>T3-工程车</item>
+        <item>T4-监测车</item>
+        <item>T5-邮电车</item>
+        <item>T6-消防车</item>
+        <item>T7-清洁车</item>
+        <item>T8-医疗车</item>
+        <item>TP-油罐车</item>
+        <item>TQ-气罐车</item>
+        <item>TR-液罐车</item>
+        <item>TS-冷藏车</item>
+        <item>TT-集装箱拖头</item>
+    </string-array>
+    <string-array name="threecar_platetype">
+        <item>01-大型汽车号牌</item>
+        <item>02-小型汽车号牌</item>
+        <item>03-使馆汽车号牌</item>
+        <item>04-领馆汽车号牌</item>
+        <item>05-境外汽车号牌</item>
+        <item>06-外籍汽车号牌</item>
+        <item>07-两、三轮摩托车号牌</item>
+        <item>08-轻便摩托车号牌</item>
+        <item>09-使馆摩托车号牌</item>
+        <item>10-领馆摩托车号牌</item>
+        <item>11-境外摩托车号牌</item>
+        <item>12-外籍摩托车号牌</item>
+        <item>13-农用运输车号牌</item>
+        <item>14-拖拉机号牌</item>
+        <item>15-挂车号牌</item>
+        <item>16-教练汽车号牌</item>
+        <item>17-教练摩托车号牌</item>
+        <item>18-试验汽车号牌</item>
+        <item>19-试验摩托车号牌</item>
+        <item>20-临时入境汽车号牌</item>
+        <item>21-临时入境摩托车号牌</item>
+        <item>22-临时行驶车号牌</item>
+        <item>23-公安警车号牌</item>
+        <item>24-其它车型</item>
+        <item>25-专用机械</item>
+        <item>26-警备摩托车</item>
+        <item>27-大型警车</item>
+        <item>30-燃油助力车</item>
+        <item>31-电驱动二轮车</item>
+        <item>32-二轮摩托车</item>
+        <item>33-正三轮摩托车</item>
+        <item>34-侧三轮摩托车</item>
+        <item>35-残疾人机动轮椅车</item>
+        <item>36-电驱动三轮车</item>
+        <item>81-武警号牌</item>
+        <item>82-军队号牌</item>
+        <item>83-无号牌</item>
+        <item>84-假号牌</item>
+        <item>85-挪用号牌</item>
+        <item>99-其它号牌</item>
+    </string-array>
+    <string-array name="threecar_insurecomname">
+        <item>00120-紫金财产保险股份有限公司</item>
+        <item>00106-华农财产保险股份有限公司</item>
+        <item>00105-都邦财产保险股份有限公司</item>
+        <item>00097-永安财产保险股份有限公司</item>
+        <item>00096-安邦财产保险股份有限公司</item>
+        <item>00095-中国平安财产保险股份有限公司</item>
+        <item>00094-中国人民财产保险股份有限公司</item>
+        <item>00104-安华农业保险股份有限公司</item>
+        <item>00103-上海安信农业保险股份有限公司</item>
+        <item>00102-永诚财产保险股份有限公司</item>
+        <item>00101-天安保险股份有限公司</item>
+        <item>00100-华安财产保险股份有限公司</item>
+        <item>00099-中华联合保险控股股份有限公司</item>
+        <item>00107-渤海财产保险股份有限公司</item>
+        <item>00108-天平汽车保险股份有限公司</item>
+        <item>00039-民安保险（中国）有限公司</item>
+        <item>00042-太平保险有限公司</item>
+        <item>00053-中国大地财产保险股份有限公司</item>
+        <item>00119-信达财产保险股份有限公司</item>
+        <item>00031-大众保险股份有限公司</item>
+        <item>00037-华泰财产保险股份有限公司</item>
+        <item>00078-中国太平洋财产保险股份有限公司</item>
+        <item>00117-国元农业保险股份有限公司</item>
+        <item>00118-鼎和财产保险有限公司</item>
+        <item>00110-中国太平洋财产保险股份有限公司</item>
+        <item>00111-中银财产保险有限公司</item>
+        <item>00112-阳光财产保险股份有限公司</item>
+        <item>00113-阳光农业相互保险公司</item>
+        <item>00114-中国人寿财产保险股份有限公司</item>
+        <item>00115-安诚财产保险股份有限公司</item>
+        <item>00116-长安责任保险股份有限公司</item>
+        <item>00121-浙商财产保险股份有限公司</item>
+        <item>00122-安盟保险有限公司（商业险）</item>
+        <item>00123-安联保险公司（商业险）</item>
+        <item>00124-国泰财产保险有限责任公司（商业险）</item>
+        <item>00125-富邦保险公司（商业险）</item>
+        <item>00126-利宝财险（商业险）</item>
+        <item>00127-三星财险（商业险）</item>
+        <item>00128-泰山财产保险股份有限公司</item>
+        <item>00129-众诚财产保险股份有限公司</item>
+        <item>00130-中煤财产保险股份有限公司</item>
+        <item>00131-中意财产保险公司(商业险)</item>
+        <item>00132-长江财产保险股份有限公司</item>
+        <item>00133-鑫安汽车保险股份有限公司</item> </string-array>
+    <string-array name="threecar_nullcertitype">
+		<item>01-居民身份证</item>
+		<item>02-居民户口薄</item>
+		<item>03-驾驶证</item>
+		<item>04-军官证</item>
+		<item>05-士兵证</item>
+		<item>06-军官离退休证</item>
+		<item>07-中国护照</item>
+		<item>08-异常身份证</item>
+		<item>41-港澳通行证</item>
+		<item>42-台湾通行证</item>
+		<item>43-回乡证</item>
+		<item>51-外国护照</item>
+		<item>52-旅行证</item>
+		<item>53-居留证件</item>
+		<item>71-组织机构代码证</item>
+		<item>72-税务登记证</item>
+		<item>73-营业执照</item>
+		<item>99-其他证件</item>
+    </string-array>
+    <string-array name="driver_certitype">
+		<item>居民身份证-01</item>
+		<item>护照-02</item>
+		<item>军人证-03</item>
+		<item>组织机构代码-10</item>
+		<item>工商注册号码-11</item>
+    </string-array>
+</resources>

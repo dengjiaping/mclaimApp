@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appbgcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@color/appbgcolor"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/insurear_tv_rl_carno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/insurear_tv_carno"
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="15dp"
+                    android:text="车牌号是否相符" />
+
+                <com.sinosoftyingda.fastclaim.common.ui.utils.MySlipSwitch
+                    android:id="@+id/insurear_tv_carno_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/insurear_ed_carno"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/insurear_tv_rl_carno"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/input_bg"
+                android:gravity="top"
+                android:maxLength="150"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@color/appbgcolor"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/insurear_tv_rl_engine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="发动机号是否相符" />
+
+                <com.sinosoftyingda.fastclaim.common.ui.utils.MySlipSwitch
+                    android:id="@+id/insurear_tv_engine_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="15dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/insurear_ed_engine"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/insurear_tv_rl_engine"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/input_bg"
+                android:gravity="top"
+                   android:maxLength="150"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@color/appbgcolor"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/insurear_tv_rl_chassis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/word_list_item_textview_value_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="车架号是否相符" />
+
+                <com.sinosoftyingda.fastclaim.common.ui.utils.MySlipSwitch
+                    android:id="@+id/insurear_tv_chassis_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/insurear_ed_chassis"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/insurear_tv_rl_chassis"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/input_bg"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                   android:maxLength="150"
+                android:scrollHorizontally="false"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/appbgcolor" >
+
+            <TextView
+                style="@style/word_list_item_textview_value_style"
+                android:layout_margin="15dp"
+                android:text="使用性质是否相符" />
+
+            <com.sinosoftyingda.fastclaim.common.ui.utils.MySlipSwitch
+                android:id="@+id/insurear_tv_usetype_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/appbgcolor" >
+
+            <TextView
+                style="@style/word_list_item_textview_value_style"
+                android:layout_margin="15dp"
+                android:text="行驶证是否有效" />
+
+            <com.sinosoftyingda.fastclaim.common.ui.utils.MySlipSwitch
+                android:id="@+id/insurear_tv_drivingpermit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

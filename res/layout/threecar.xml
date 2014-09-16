@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/threecar_sv_01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/threecar_lay_bottom" >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 多个三者车 -->
+	        <LinearLayout
+	            android:id="@+id/threecar_lay_threecars"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	        </LinearLayout>
+	        
+	        <LinearLayout
+		        android:id="@+id/threecar_car_btn_add"
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:layout_below="@+id/threecar_sv_01"
+		        android:layout_marginTop="12dp"
+		        android:background="@drawable/third_addcar"
+		        android:gravity="center" >
+		        <ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/third_addicon" />
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="增加三者车"
+		            android:textSize="@dimen/text_size_middle" />
+		    </LinearLayout>
+	    </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/threecar_lay_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/more_list_bg"
+        android:gravity="center" >
+        <Button
+            android:id="@+id/threecar_btn_save"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/maintask_btn_bg"
+            android:text="保存" />
+    </LinearLayout>
+
+</RelativeLayout>

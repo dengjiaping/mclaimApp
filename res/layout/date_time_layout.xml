@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg" 
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/timePicker1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <com.sinosoftyingda.fastclaim.common.ui.wheel.WheelView
+            android:id="@+id/year"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <com.sinosoftyingda.fastclaim.common.ui.wheel.WheelView
+            android:id="@+id/month"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content" />
+
+        <com.sinosoftyingda.fastclaim.common.ui.wheel.WheelView
+            android:id="@+id/day"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_datetime_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_blue"
+            android:text="@string/btn_confirm" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_datetime_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_blue"
+            android:text="清空" >
+        </Button>
+             
+        <Button
+            android:id="@+id/btn_datetime_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_blue"
+            android:text="@string/btn_cancel" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

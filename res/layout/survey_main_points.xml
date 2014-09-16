@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tasks_openbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/the_first_scene" />
+
+        <RadioGroup
+            android:id="@+id/smp_rg_first_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/smp_rd_first_scene_y"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:button="@drawable/bg_radiobtn"
+                android:checked="true"
+                android:text="@string/y"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/smp_rd_first_scene_n"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:button="@drawable/bg_radiobtn"
+                android:text="@string/n"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/occurrence_reason" />
+
+        <include
+            android:id="@+id/smp_i_occurrence_reason"
+            layout="@layout/common_spinner" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/accident_responsibility" />
+
+        <include
+            android:id="@+id/smp_i_accident_responsibility"
+            layout="@layout/common_spinner" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/claim_case_properties" />
+
+        <include
+            android:id="@+id/smp_i_claim_case_properties"
+            layout="@layout/common_spinner" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/subrogation" />
+
+        <TextView
+            android:id="@+id/smp_tv_subrogation"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginRight="10dp"
+             />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/mutual_touch_since" />
+
+        <TextView
+            android:id="@+id/smp_tv_mutual_touch_since"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginRight="10dp"
+             />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/smp_ll_risk_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/risk_tip" />
+
+        <TextView
+            android:id="@+id/smp_tv_risk_tip"
+            style="@style/word_list_item_textview_value_style"
+          />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/smp_ll_beijing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/word_list_item_textview_title_style"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="@string/traffic_accident_book" />
+
+            <RadioGroup
+                android:id="@+id/smp_rg_traffic_accident_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/smp_rd_traffic_accident_book_y"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/bg_radiobtn"
+                    android:checked="true"
+                    android:text="@string/y1"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/smp_rd_traffic_accident_book_n"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:button="@drawable/bg_radiobtn"
+                    android:text="@string/n1"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#66000000"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/word_list_item_textview_title_style"
+                android:layout_marginRight="20dp"
+                android:text="@string/road_traffic_accident" />
+
+            <RadioGroup
+                android:id="@+id/smp_rg_road_traffic_accident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/smp_rd_road_traffic_accident_y"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/bg_radiobtn"
+                    android:checked="true"
+                    android:text="@string/y1"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/smp_rd_road_traffic_accident_n"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:button="@drawable/bg_radiobtn"
+                    android:text="@string/n1"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

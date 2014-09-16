@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 标题容器 -->
+
+    <include
+        android:id="@+id/main_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/activity_main_top" />
+
+    <!-- 底部导航容器 -->
+
+    <include
+        android:id="@+id/main_buttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/activity_main_bottom" />
+
+    <!-- 中央容器 -->
+
+    <RelativeLayout
+        android:id="@+id/ii_main_middle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_buttom"
+        android:layout_below="@+id/main_top"
+        android:background="@color/appbgcolor" >
+    </RelativeLayout>
+
+</RelativeLayout>

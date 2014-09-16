@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tasks_openbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/the_first_scene" />
+
+        <TextView
+            android:id="@+id/defloss_basic_record_tv_first_scene"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/occurrence_reason" />
+
+        <TextView
+            android:id="@+id/defloss_basic_record_tv_occurrence_reason"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/accident_responsibility" />
+
+        <TextView
+            android:id="@+id/defloss_basic_record_tv_responsibility"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/claim_case_properties" />
+
+        <TextView
+            android:id="@+id/defloss_basic_record_tv_properties"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginRight="10dp"
+           />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/subrogation" />
+
+        <TextView
+            android:id="@+id/defloss_basic_record_tv_subrogation"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="@string/mutual_touch_since" />
+
+        <TextView
+            android:id="@+id/defloss_basic_record_tv_sincetouch_since"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginRight="10dp"
+           />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:id="@+id/defloss_basic_record_ll_accident"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="35dp"
+            android:text="有无道路交通事故" />
+
+        <TextView
+            android:id="@+id/defloss_basic_record_tv_accident"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginRight="10dp"
+           />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:id="@+id/defloss_basic_record_ll_sincetouch_accidentBook"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_marginRight="20dp"
+            android:text="有无交管事故书" />
+
+        <TextView
+            android:id="@+id/defloss_basic_record_tv_sincetouch_accidentBook"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginRight="10dp"
+           />
+    </LinearLayout>
+
+</LinearLayout>

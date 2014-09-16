@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tasks_openbg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/deflossinfo_content_item_btn_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_blue_style"
+            android:padding="10dp"
+            android:text="配件数据"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="配件金额合计" />
+
+        <TextView
+            android:id="@+id/deflossinfo_content_item_part_price"
+            style="@style/word_list_item_textview_value_style"
+            android:text="0.00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="维修金额合计" />
+
+        <TextView
+            android:id="@+id/deflossinfo_content_item_weixu_price"
+            style="@style/word_list_item_textview_value_style"
+            android:text="0.00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="残值合计" />
+
+        <TextView
+            android:id="@+id/deflossinfo_factory_item_tv_canzhi"
+            style="@style/word_list_item_textview_value_style"
+            android:text="0.00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:text="定损金额合计(小写)" />
+
+        <TextView
+            android:id="@+id/deflossinfo_factory_item_tv_deflossprice"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginLeft="10dp"
+            android:text="0.00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:text="定损金额合计(大写)" />
+
+        <TextView
+            android:id="@+id/deflossinfo_factory_item_tv_deflossprice_daxie"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginLeft="10dp"
+            android:text="" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_width="120dp"
+            android:text="施救费" />
+
+        <EditText
+            android:id="@+id/deflossinfo_factory_item_et_shijiufee"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical" 
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:text="0.00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+</LinearLayout>

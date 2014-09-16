@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/process_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/pq_iv_gray_dispatch"
+            android:layout_width="86dp"
+            android:layout_height="56dp"
+            android:background="@drawable/gray_dispatch"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/pq_iv_gray_survey_line"
+            android:layout_width="21dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="13.5dp"
+            android:background="@drawable/process_grayline"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/pq_iv_gray_survey"
+            android:layout_width="86dp"
+            android:layout_height="54dp"
+            android:background="@drawable/gray_survey"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/pq_iv_gray_setloss_line"
+            android:layout_width="21dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="13.5dp"
+            android:background="@drawable/process_grayline"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/pq_iv_gray_setloss"
+            android:layout_width="86dp"
+            android:layout_height="54dp"
+            android:background="@drawable/gray_setloss"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/pq_iv_gray_price_line"
+            android:layout_width="21dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="13.5dp"
+            android:background="@drawable/process_grayline"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/pq_iv_gray_price"
+            android:layout_width="86dp"
+            android:layout_height="54dp"
+            android:background="@drawable/gray_price"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/pq_iv_gray_damage_line"
+            android:layout_width="21dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="13.5dp"
+            android:background="@drawable/process_grayline"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/pq_iv_gray_damage"
+            android:layout_width="86dp"
+            android:layout_height="56dp"
+            android:background="@drawable/gray_damage"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="392dp"
+        android:background="@drawable/process_listbg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pq_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_middle"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/pq_lv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="330dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#FFCC00"
+            android:fadingEdge="none" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

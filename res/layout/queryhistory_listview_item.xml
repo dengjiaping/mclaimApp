@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/more_list_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/query_listview_item_tv_registno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:maxLength="20"
+            android:text="R020105070211235300"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_middle" />
+
+        <TextView
+            android:id="@+id/query_listview_item_tv_itemtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/textthin"
+            android:textSize="@dimen/text_size_little" />
+    </RelativeLayout>
+
+    <RelativeLayout 
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content" >
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_toLeftOf="@+id/query_listview_item_btn_print">
+	        <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+		        android:layout_marginLeft="10dp"
+		        android:orientation="horizontal" >
+		        <ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/history_head"
+		            android:contentDescription="@null" />
+		        <TextView
+		            android:id="@+id/query_listview_item_tv_name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:text="周小云"
+		            android:maxLength="8"
+		            android:textColor="@color/textthin"
+		            android:textSize="@dimen/text_size_little" />
+		        <ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:layout_marginTop="4dp"
+		            android:background="@drawable/history_canumber"
+		            android:contentDescription="@null" />
+		        <TextView
+		            android:id="@+id/query_listview_item_tv_carNo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:text="京A3324"
+		            android:textColor="@color/textthin"
+		            android:textSize="@dimen/text_size_little" />
+		    </LinearLayout>
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="3dp" >
+		        <ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:background="@drawable/history_time"
+		            android:contentDescription="@null" />
+		        <TextView
+		            android:id="@+id/query_listview_item_tv_time"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:text="2013-02-14 12:34:19"
+		            android:textColor="@color/textthin"
+		            android:textSize="@dimen/text_size_little" />
+		    </LinearLayout>
+	    </LinearLayout>
+	    <Button 
+	        android:id="@+id/query_listview_item_btn_print"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:text="打印"
+	        android:layout_centerVertical="true"
+	        android:visibility="gone"
+            android:background="@drawable/maintask_btn_bg"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/appbgcolor"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/history_tiltelist_bg" >
+
+                <TextView
+                    android:id="@+id/leaveMsg_registno_title"
+                    style="@style/common_child_textview_style"
+                    android:text="序号" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/leaveMsg_registno_title_value"
+                style="@style/word_list_item_textview_value_style"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/appbgcolor"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp" >
+
+                <TextView
+                    style="@style/common_child_textview_style"
+                    android:text="提交时间" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/leaveMsg_submittime_value"
+                style="@style/word_list_item_textview_value_style"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/appbgcolor"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp" >
+
+                <TextView
+                    style="@style/common_child_textview_style"
+                    android:text="节点类型" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/leaveMsg_nodeType_value"
+                style="@style/word_list_item_textview_value_style"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/appbgcolor"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp" >
+
+                <TextView
+                    style="@style/common_child_textview_style"
+                    android:text="留言人" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/leaveMsg_personName_value"
+                style="@style/word_list_item_textview_value_style"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/appbgcolor"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp" >
+
+                <TextView
+                    style="@style/common_child_textview_style"
+                    android:text="留言内容" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/leaveMsg_content_value"
+                style="@style/word_list_item_textview_value_style"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+    </LinearLayout>
+
+</ScrollView>

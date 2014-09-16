@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- haoyun -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:text="维修明细"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:contentDescription="@null" />
+
+    <ListView
+        android:id="@+id/clci_lv_repair"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/clci_cb_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打印定损信息"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/clci_cb_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="短信通知定损信息"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/clci_btn_ok"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/is_positive" />
+    </LinearLayout>
+    <!-- 满意度 -->
+
+    <include layout="@layout/certain_loss_degree_satisfaction" />
+
+</LinearLayout>

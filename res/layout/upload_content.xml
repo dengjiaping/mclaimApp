@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/more_list_bg"
+    android:minHeight="?android:attr/listPreferredItemHeight" >
+
+    <TextView
+        android:id="@+id/upload_tv_policyno"
+        style="@style/moreactivity_style_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:maxLength="30"
+        android:text="R1105050820130023456"
+        android:textSize="18dp" />
+
+    <ProgressBar
+        android:id="@+id/upload_pro_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_toLeftOf="@+id/upload_tv_parcent"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:max="100"
+        android:layout_below="@+id/upload_tv_policyno"
+        android:layout_marginLeft="10dp"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/thumb" />
+
+    <TextView
+        android:id="@+id/upload_tv_parcent"
+        style="@style/moreactivity_style_textview"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp" 
+        android:layout_toLeftOf="@+id/upload_btn_action"
+        android:text="100%"
+        android:textSize="@dimen/text_size_little" />
+
+    <Button
+        android:id="@+id/upload_btn_action"
+		android:layout_toLeftOf="@+id/upload_btn_del"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/update_start" />
+
+    <Button
+        android:id="@+id/upload_btn_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true" 
+        android:layout_marginRight="10dp"
+        android:background="@drawable/third_deleteicon" />
+</RelativeLayout>

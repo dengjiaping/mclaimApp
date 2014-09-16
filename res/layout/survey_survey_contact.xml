@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tasks_openbg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/survey_survey_assured_tv1"
+                    style="@style/common_child_textview_style"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="被保险人" />
+
+                <TextView
+                    android:id="@+id/survey_survey_assured_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/et_height"
+                    android:layout_alignBaseline="@+id/survey_survey_assured_tv1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/survey_survey_assured_tv1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <TextView
+                    android:id="@+id/survey_survey_assured_tv2"
+                    style="@style/word_list_item_textview_title_style"
+                    android:layout_below="@+id/survey_survey_assured_tv1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="电话" />
+
+                <EditText
+                    android:id="@+id/survey_survey_phone_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/et_height"
+                    android:layout_alignBaseline="@+id/survey_survey_assured_tv2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/survey_survey_assured_tv2"
+                    android:background="@drawable/input_bg"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/appbgcolor" >
+
+                <TextView
+                    android:id="@+id/survey_survey_bailee_tv1"
+                    style="@style/common_child_textview_style"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="受托人" />
+
+                <EditText
+                    android:id="@+id/survey_survey_bailee_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/et_height"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/survey_survey_bailee_tv1"
+                    android:background="@drawable/input_bg"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/survey_survey_bailee_tv2"
+                    style="@style/word_list_item_textview_title_style"
+                    android:layout_below="@+id/survey_survey_bailee_tv1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="电话" />
+
+                <EditText
+                    android:id="@+id/survey_survey_bailee_phone_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/et_height"
+                    android:layout_alignBaseline="@+id/survey_survey_bailee_tv2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/survey_survey_bailee_tv2"
+                    android:background="@drawable/input_bg"
+                    android:inputType="phone"
+                    android:maxLength="20"
+                    android:singleLine="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

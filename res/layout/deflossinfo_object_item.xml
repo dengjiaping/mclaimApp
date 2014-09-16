@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tasks_openbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style" 
+            android:layout_width="130dp"
+            android:text="涉案车辆" />
+
+        <TextView
+            android:id="@+id/deflossinfo_boject_item_tv_cartype"
+            style="@style/word_list_item_textview_value_style"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_width="130dp"
+            android:text="号牌号码" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/deflossinfo_boject_item_ed_cartno"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/input_bg"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/deflossinfo_boject_item_tv_cartno"
+                style="@style/word_list_item_textview_value_style"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_width="130dp"
+            android:text="车架号" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/deflossinfo_boject_item_ed_chassis"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/input_bg"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/deflossinfo_boject_item_tv_chassis"
+                style="@style/word_list_item_textview_value_style"
+               />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_width="130dp"
+            android:text="厂牌型号" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/deflossinfo_boject_item_tv_factoryno"
+                style="@style/word_list_item_textview_value_style"
+               />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:id="@+id/deflossinfo_boject_item_shanghai"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/deflossinfo_boject_item_ll_carmiaoshu"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/appbgcolor"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/word_list_item_textview_title_style"
+                android:layout_width="130dp"
+            	android:text="车辆初次登记日期" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/deflossinfo_boject_item_ed_carfirstlogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/input_bg"
+                     />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+
+        <LinearLayout
+            android:id="@+id/deflossinfo_boject_item_ll_carmiaoshu"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/appbgcolor"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/word_list_item_textview_title_style"
+                android:layout_width="130dp"
+            	android:text="行驶证车辆描述" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/deflossinfo_boject_item_ed_carmiaoshu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/input_bg"
+                    android:hint="如 大型普通客车" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+
+        <LinearLayout
+            android:id="@+id/deflossinfo_boject_item_ll_factoryno"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/appbgcolor"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/word_list_item_textview_title_style"
+                android:layout_width="130dp"
+            	android:text="车辆制造厂编码" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/deflossinfo_boject_item_ed_factoryno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/input_bg" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+
+        <LinearLayout
+            android:id="@+id/deflossinfo_boject_item_ll_factoryname"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/appbgcolor"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/word_list_item_textview_title_style"
+                android:layout_width="130dp"
+            	android:text="车辆制造厂名称" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+              
+                <EditText
+                    android:id="@+id/deflossinfo_boject_item_ed_factoryname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/input_bg" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#66000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deflossinfo_boject_item_ll_newthreecar_price"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_width="130dp"
+            android:text="三者新车购置价" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:id="@+id/deflossinfo_boject_item_spinner_newthreecar_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/common_spinner" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:id="@+id/deflossinfo_boject_item_ll_newthreecar_price"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/appbgcolor"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/word_list_item_textview_title_style"
+            android:layout_width="130dp"
+            android:text="定损险别" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:id="@+id/deflossinfo_boject_item_spinner_deflosstype"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/common_spinner" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#66000000" />
+
+</LinearLayout>

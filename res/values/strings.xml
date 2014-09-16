@@ -1,0 +1,212 @@
+<resources>
+
+    <string name="app_name">C_Claim</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_main">C_Claim</string>
+    <string name="please_open_gps">GPS定位功能尚未开启，请先设置</string>
+    <string name="_select_value">请选择</string>
+    <string name="btn_outword">下班</string>
+    <string name="btn_inword">上班</string>
+    <string name="btn_confirm">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="is_exit">确定要退出系统吗？</string>
+    <string name="is_positive">确定</string>
+    <string name="is_negative">取消</string>
+    <string name="is_loading">正在加载中,请稍等……</string>
+    <string name="is_extiting">正在注销,请稍等……</string>
+    <string name="is_claimsumbitting">正在提交理赔,请稍等……</string>
+    <string name="is_claimtongbuting">正在同步理赔,请稍等……</string>
+    <string name="_splashvalue">(手机客户端)</string>
+
+    <!-- add haoyun -->
+    <string name="open_an_account_name">开户行姓名</string>
+    <string name="idcard_no">身份证号码</string>
+    <string name="open_an_account_number">开户行账号</string>
+    <string name="customer_information">客户信息</string>
+    <string name="checklist_survey">满意度调查</string>
+    <string name="checklist_fac1">非常满意</string>
+    <string name="checklist_fac2">满意</string>
+    <string name="checklist_fac3">比较满意</string>
+    <string name="checklist_fac4">一般</string>
+    <string name="checklist_fac5">不满意</string>
+    <string name="basic_msg">基本信息</string>
+    <string name="survey_msg">查勘信息</string>
+    <string name="photograph_msg">拍照</string>
+    <string name="process_query">流程查询</string>
+    <string name="claim_msg">定损信息</string>
+    <string name="unit_cost">零部件更换费用清单:</string>
+    <string name="the_first_scene">第一现场</string>
+    <string name="the_types_of_cases">案件类型</string>
+    <string name="occurrence_reason">出险原因</string>
+    <string name="accident_responsibility">事故责任</string>
+    <string name="claim_case_properties">赔案性质</string>
+    <string name="subrogation">代位求偿</string>
+    <string name="mutual_touch_since">是否通赔</string>
+    <string name="risk_tip">风险提示</string>
+    <string name="y">是</string>
+    <string name="n">否</string>
+    <string name="y1">有</string>
+    <string name="n1">无</string>
+    <string name="the_subject_car">标的车</string>
+    <string name="three_party_car">三者车</string>
+    <string name="property_damage">物损</string>
+    <string name="people">人伤</string>
+    <string name="the_driver_msg">驾驶人信息</string>
+    <string name="driving_permit_vehicle_description">行驶证车辆描述</string>
+    <string name="vehicle_manufacturing_factory_code">车辆制造厂编码</string>
+    <string name="vehicle_manufacturer">车辆制造厂名称</string>
+    <string name="traffic_accident_book">有无交管事故书</string>
+    <string name="road_traffic_accident">道路交通事故</string>
+    <string name="schedule_user_code">调度人员：</string>
+    <string name="schedule_input_time">调度时间：</string>
+    <string name="check_user_code">查勘人员：</string>
+    <string name="check_accep_time">受理时间：</string>
+    <string name="check_handle_time">完成时间：</string>
+    <string name="certain_user_code">定损人员：</string>
+    <string name="certain_accep_time">受理时间：</string>
+    <string name="certain_handle_time">完成时间：</string>
+    <string name="certain_amount">定损金额：</string>
+    <string name="verify_price_user_code">核价人员：</string>
+    <string name="verify_loss_user_code">核损人员：</string>
+    <!-- 查勘任务Bar -->
+    <string name="claimbar_claiminfo">查勘信息</string>
+    <string name="claimbar_claimant">索赔人信息</string>
+    <string name="claimbar_accident">事故示意图</string>
+    <string name="claimbar_checklist">调查问卷</string>
+
+    <!-- 索赔人信息 -->
+    <string name="claimant_savetemp">暂存</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="claimant_claimantinfo">索赔人信息</string>
+    <string name="claimant_claiminfo">案件信息</string>
+    <string name="claimant_claimtype">案件类型</string>
+    <string name="claimant_isCompensate">是否通赔</string>
+    <string name="claimant_isSubrogation">是否代位求偿</string>
+    <string name="claimant_claimF">本车</string>
+    <string name="claimant_claimT">三者车</string>
+
+    <string name="check_task_dispatch_result">查勘改派结果到达</string>
+    <string name="certainloss_task_dispatch_result">定损改派结果到达</string>
+    <string name="check_task_complete_resut">查勘任务完成结果到达</string>
+    <string name="certainloss_task_complete_resut">定损任务完成结果到达</string>
+    <string name="certainloss_task_verify_result">定损任务核损结果到达</string>
+    <string name="new_task">新任务</string>
+    
+    <!-- 调查问卷 -->
+    <string name="checklist_qTitle">调查问卷</string>
+    <string name="checklist_q1">1.保险车辆的车牌号码、发动机号、车架号码与保险单上所列是否相符?</string>
+    <string name="checklist_q2">2.出险时间是否在保险有效期限内?</string>
+    <string name="checklist_q3">3.出险时间接近保险起讫期的，有无相应时间证明?</string>
+    <string name="checklist_q4">4.实际使用性质与保单上所注明的是否一致?</string>
+    <string name="checklist_q5">5.保险车辆驾驶员情况与报案人所述是否一致?</string>
+    <string name="checklist_q6">6.保险车辆驾驶员的驾驶证是否有效?</string>
+    <string name="checklist_q7">7.保险车辆驾驶员准驾车型与实际驾驶车辆是否相符?</string>
+    <string name="checklist_q8">8.使用各种专用机械车、特种车的人员是否有国家有关部门核发的有效操作证?</string>
+    <string name="checklist_q9">9.驾驶营业性客车的驾驶员无国家有关行政管理部门核发的有效资格证书？</string>
+    <string name="checklist_q10">10.保险车辆驾驶员是否为被保险人允许的驾驶员?</string>
+    <string name="checklist_q11">11.保险车辆驾驶员是否为保险合同约定的驾驶员?</string>
+    <string name="checklist_q12">12.保险车辆驾驶员是否为酒后驾车?</string>
+    <string name="checklist_q13">13.事故车辆损失痕迹与事故现场痕迹是否吻合?</string>
+    <string name="checklist_q14">14.第三者车辆是否已向其承保公司报案、索赔?</string>
+    <string name="checklist_q15">15.事故是否涉及第三方人身伤亡?</string>
+    <string name="checklist_q16">16.事故是否涉及第三方财产损失?</string>
+    <string name="checklist_q17">17.事故是否涉及本车上人员伤亡?</string>
+    <string name="checklist_q18">18.是否向其它保险公司投保?</string>
+    <string name="checklist_q19">19.事故车辆是否配置防盗装置?</string>
+    <string name="checklist_represent">事故描述</string>
+    <string name="remark">备注</string>
+    <string name="satisfaction_5">非常满意</string>
+    <string name="satisfaction_4">满意</string>
+    <string name="satisfaction_3">比较满意</string>
+    <string name="satisfaction_2">一般</string>
+    <string name="satisfaction_1">不满意</string>
+    <string name="satisfaction">满意度调查</string>
+
+    <!-- 索赔人 -->
+    <string name="case_type">案件类型</string>
+    <string name="isPayment">是否通赔</string>
+    <string name="isSubrogation">是否代位求偿</string>
+
+    <!-- 导航地图 -->
+    <string name="search_title">搜索关键字</string>
+    <string name="location">定位中，请等待&#8230;</string>
+    <string name="real_time_traffic">实时路况</string>
+    <string name="choose_layer">选择图层</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="route_info">路线信息</string>
+    <string name="offline_map">离线地图</string>
+    <string name="nav_route">导航路线</string>
+
+    <!-- 关于 jianfan -->
+    <string name="about_welcome">欢迎使用</string>
+    <string name="about_name">英大泰和车险移动查勘定损系统</string>
+    <string name="about_version">版本号:1.0.0</string>
+    <string name="about_system">关于系统</string>
+    <string name="about_aboutsys">车险移动查勘定损系统，简称C_Claim。是英大泰和财产保险股份有限公司，为满足业务需求和方便服务客户而推出的一款集车险查勘和车险定损为一体的移动应用程序</string>
+    <string name="about_aim">该程序旨在帮助您快速完成理赔案件处理</string>
+    <string name="about_aim_1">快速处理车险查勘定损任务的信息获取和案件相关信息录入提交。</string>
+    <string name="about_aim_2">相关图像和视频资料的上传存档。</string>
+    <string name="about_aim_3">实时视频协助和地图服务帮助你完成任务轻松愉快。</string>
+
+    <!-- 定损单打印 -->
+    <string name="bluetoothprint">蓝牙打印</string>
+    <string name="smsnotice">短信通知</string>
+    <string name="deflosssureinfo">定损确认信息</string>
+    <string name="customeraccountinfo">客户账号信息</string>
+    <string name="deflossinstitution">定损机构</string>
+    <string name="deflossstaff">定损人员</string>
+    <string name="reportno">报案号</string>
+    <string name="policyno_ctali">保险单号\n(交强险)</string>
+    <string name="policyno_business">保单号码\n(商业险)</string>
+    <string name="insurant">被保险人</string>
+    <string name="deflosstarget">定损对象</string>
+    <string name="brandmodel">厂牌型号</string>
+    <string name="vincode">VIN码</string>
+    <string name="replaceinfo">换件明细</string>
+    <string name="repairinfo">维修明细</string>
+    <string name="deflossmoney">定损金额</string>
+    <string name="replace_total">配件合计金额</string>
+    <string name="repair_total">维修合计金额</string>
+    <string name="scrap_value">残值合计</string>
+    <string name="deflosstotalmoney">定损金额合计\n(小写)</string>
+    <string name="bigletter">(大写)</string>
+    <string name="printdate">打印单生成时间</string>
+    <string name="star_line">******************************************************************************</string>
+    <string name="title_bluetoothdevice">蓝牙设备</string>
+    <string name="sdk_message_login_success">连接成功</string>
+    <string name="sdk_message_login_fail">连接失败</string>
+    <string name="sdk_message_start_realplay">请求播放</string>
+    <string name="sdk_message_stop_realplay">停止播放</string>
+    <string name="sdk_message_start_voicetalk">请求语音对讲</string>
+    <string name="sdk_message_keepalive_fail">保活失败</string>
+    <string name="sdk_message_stop_voicetalk">停止语音对讲</string>
+    <string name="tv_ordertime">预约时间</string>
+
+    <!-- APN参数 -->
+    <string name="apn_name">YDAPN</string>
+    <string name="apn_apn">ydapn</string>
+    <string name="apn_type">default,supl</string>
+    <string name="error_not_connection">无网络连接</string>
+    <string name="title_prompt">提示</string>
+    <string name="msg_android4_apn">如果要使用APN功能，需要将本应用安装为系统应用。\n点击“确定”，则会将本应用安装为系统，并自动重启。</string>
+    <!-- 抽屉 -->
+    <string name="btn_accept">任务受理</string>
+    <string name="btn_dispatch">改派任务</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_test_main">TestMainActivity</string>
+    <string name="remote_path">/cClaim/</string>
+
+    <!-- DB -->
+    <string name="DBPath">/claimData/db/</string>
+    <string name="DBName">fastclaim.db</string>
+    <!-- httpUrl -->
+    <!-- **********************【TEST】************************ -->
+    <!--<string name="http_url">http://10.0.35.112:8002/mclaim/forPadYingdaServlet</string>-->
+    
+    <!-- **********************【UAT】************************ -->
+    <!--<string name="http_url">http://192.186.3.24:8001/mclaim/forPadYingdaServlet</string> -->
+    
+    <!-- **********************【上线】************************ -->
+     <string name="http_url">http://192.186.3.14:8001/mclaim/forPadYingdaServlet</string>
+</resources>

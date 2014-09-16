@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_sub1"
+        android:title="单证照片"
+        android:orderInCategory="100" />
+    <item android:id="@+id/menu_sub2"
+        android:title="复堪照片"
+        android:orderInCategory="100" />
+    <item android:id="@+id/menu_sub3"
+        android:title="标的车"
+        android:orderInCategory="100" />
+    <item android:id="@+id/menu_sub4"
+        android:title="三者车"
+        android:orderInCategory="100" />
+    <item android:id="@+id/menu_sub5"
+        android:title="物损"
+        android:orderInCategory="100" />
+    <item android:id="@+id/menu_sub6"
+        android:title="人伤"
+        android:orderInCategory="100" />
+    <item android:id="@+id/menu_sub7"
+        android:title="现场照片"
+        android:orderInCategory="100" />
+    <item android:id="@+id/menu_delete"
+        android:title="删除？"
+        android:orderInCategory="100" />
+</menu>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tasks_openbg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/survey_btn_involved_case_car"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/sicc_iv_subject_car_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/filled"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:background="@drawable/more"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/sicc_iv_subject_car_left"
+            android:text="@string/the_subject_car" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/survey_btn_involved_three_car"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/sicc_iv_three_party_car_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/filled"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/survey_imv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:background="@drawable/more"
+            android:gravity="center" />
+        
+        <TextView
+            android:id="@+id/survey_tv_totalnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/survey_imv_right"
+            android:layout_centerVertical="true" 
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:textSize="@dimen/text_size_big"/>
+
+        <TextView
+            android:id="@+id/survey_btn_involved_three_car_tv"
+            style="@style/word_list_item_textview_value_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/sicc_iv_three_party_car_left"
+            android:text="@string/three_party_car" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/survey_btn_involved_driver"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/sicc_iv_driver_msg_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/filled" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:background="@drawable/more"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/word_list_item_textview_value_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/sicc_iv_driver_msg_left"
+            android:text="@string/the_driver_msg" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/survey_btn_involved_thingloss"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/sicc_iv_property_damage_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/unfilled" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:background="@drawable/more"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/sicc_iv_property_damage_left"
+            android:text="@string/property_damage"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_middle" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/survey_btn_involved_peopleloss"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/sicc_iv_people_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/unfilled" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:background="@drawable/more"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@+id/sicc_iv_people_left"
+            android:text="@string/people"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_middle" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000000" />
+
+</LinearLayout>

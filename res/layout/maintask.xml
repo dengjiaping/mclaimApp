@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbgcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/maintask_rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/survey_box" >
+
+        <TextView
+            android:id="@+id/maintask_btn_survey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="6dp"
+            android:text="查勘任务"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/maintask_btn_defloss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="6dp"
+            android:text="定损任务"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_big" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/maintask_btn_survey"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/list_graybox" >
+
+            <RelativeLayout
+                android:id="@+id/maintask_ll_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/maintask_btn_no_handle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/home_listbgb" >
+
+                    <ImageView
+                        android:id="@+id/no_handle_imb"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/icon_untreated" />
+
+                    <TextView
+                        android:id="@+id/maintask_no_btn_handler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/no_handle_imb"
+                        android:text="未处理查勘任务"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:id="@+id/maintask_no_handle_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/task_tip"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_middle" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/maintask_no_handle_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/maintask_btn_no_handle"
+                    android:layout_marginRight="2dp"
+                    android:divider="#66666666"
+                    android:dividerHeight="1dp"
+                    android:visibility="gone" >
+                </ListView>
+
+                <RelativeLayout
+                    android:id="@+id/maintask_btn_handleing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/maintask_no_handle_listview"
+                    android:background="@drawable/home_listbga_style" >
+
+                    <ImageView
+                        android:id="@+id/no_handle_imb_2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/icon_processing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/no_handle_imb_2"
+                        android:gravity="center"
+                        android:text="正在处理查勘任务"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:id="@+id/maintask_no_handleing_numbe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/task_tip"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_middle" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/maintask_no_handleing_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/maintask_btn_handleing"
+                    android:layout_marginRight="2dp"
+                    android:divider="#FFc5c5c5"
+                    android:dividerHeight="1dp"
+                    android:visibility="gone" >
+                </ListView>
+
+                <RelativeLayout
+                    android:id="@+id/maintask_btn_handled"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/maintask_no_handleing_listview"
+                    android:background="@drawable/home_listbga_style" >
+
+                    <ImageView
+                        android:id="@+id/no_handle_imb_ed"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/icon_complete" />
+
+                    <TextView
+                        android:id="@+id/maintask_no_handled_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/no_handle_imb_ed"
+                        android:text="已完成查勘任务"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <ImageButton
+                        android:id="@+id/maintask_no_handled_imbtn_history"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/maintask_no_handled_numbe"
+                        android:background="@drawable/icon_history" 
+                        />
+
+                    <TextView
+                        android:id="@+id/maintask_no_handled_numbe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/task_tip"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_middle" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/maintask_no_handled_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/maintask_btn_handled"
+                    android:layout_marginRight="2dp"
+                    android:divider="#FFc5c5c5"
+                    android:dividerHeight="1dp"
+                    android:visibility="gone" >
+                </ListView>
+
+                <RelativeLayout
+                    android:id="@+id/maintask_btn_gaipai"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/maintask_no_handled_listview"
+                    android:background="@drawable/home_listbga_style" >
+
+                    <ImageView
+                        android:id="@+id/no_handle_imb_gaipai"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/icon_change" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/no_handle_imb"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/no_handle_imb_gaipai"
+                        android:gravity="center"
+                        android:text="改派任务"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:id="@+id/maintask_no_gaipai_numbe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/task_tip"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_middle" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/maintask_no_gaipai_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/maintask_btn_gaipai"
+                    android:layout_marginRight="2dp"
+                    android:divider="#FFc5c5c5"
+                    android:dividerHeight="1dp"
+                    android:visibility="gone" >
+                </ListView>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

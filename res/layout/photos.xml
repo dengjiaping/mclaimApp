@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	<!-- 照相顶部 -->
+    <RelativeLayout 
+        android:id="@+id/photo_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/photo_titlebg"
+        android:layout_alignParentTop="true"
+	    android:layout_marginLeft="2dp"
+	    android:layout_marginRight="2dp">
+        <Button 
+            android:id="@+id/photo_btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/photo_prev_style"/>
+        
+        <TextView 
+            android:id="@+id/photo_tv_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="标的车"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big"
+            android:layout_toRightOf="@+id/photo_btn_prev"
+            android:layout_toLeftOf="@+id/photo_btn_next"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        
+        <Button 
+            android:id="@+id/photo_btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/photo_next_style" />
+    </RelativeLayout>
+    
+	<!-- 照相分类 -->
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/photo_mainbg"
+	    android:layout_below="@+id/photo_title"
+	    android:layout_above="@+id/photo_bottom"
+	    android:layout_marginLeft="2dp"
+	    android:layout_marginRight="2dp">
+        <Button 
+            android:id="@+id/photo_btn_nodate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/photo_nodate"/>
+	    <GridView
+		 	android:id="@+id/photo_gv_photos"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:numColumns="3"
+		    android:verticalSpacing="2dp"
+		    android:horizontalSpacing="2dp"
+			android:columnWidth="240px"
+			android:stretchMode="columnWidth"
+			android:gravity="center"/>
+	</RelativeLayout>
+	
+	<!-- 照相底部 -->
+	<RelativeLayout 
+        android:id="@+id/photo_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_bottombg"
+		android:layout_alignParentBottom="true"
+	    android:layout_marginLeft="2dp"
+	    android:layout_marginRight="2dp"
+	    android:layout_marginBottom="2dp">
+	    <Button
+	        android:id="@+id/photo_btn_camera"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/photo_camera_style"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"/>
+	    <Button 
+	        android:id="@+id/photo_btn_video"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/photo_video"
+	        android:layout_marginRight="20dp"/>
+	</RelativeLayout>
+</RelativeLayout>

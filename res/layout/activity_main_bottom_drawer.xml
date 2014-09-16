@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SlidingDrawer
+        android:id="@+id/sliding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:content="@+id/allApps"
+        android:handle="@+id/imageViewIcon"
+        android:orientation="vertical"
+        android:topOffset="330dp" >
+        
+         
+
+        <RelativeLayout
+            android:id="@+id/allApps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/showbox"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/activity_main_bottom_btn_accept"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="任务受理" />
+
+            <Button
+                android:id="@+id/activity_main_bottom_btn_gaipai"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/activity_main_bottom_btn_accept"
+                android:text="改派申请" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hiddenbox" />
+    </SlidingDrawer>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="toast_network_mobile_wifi_not_available">WIFI不可用</string>
+    <string name="toast_network_wifi_not_available">WIFI不可用</string>
+    <string name="toast_network_wifi_available">WIFI已连接</string>
+    <string name="toast_network_mobile_not_available">3G不可用</string>
+    <string name="toast_network_mobile_available">3G已连接</string>
+    <string name="toast_network_mobile_bad_signal">注意！手机网络信号不佳</string>
+</resources>

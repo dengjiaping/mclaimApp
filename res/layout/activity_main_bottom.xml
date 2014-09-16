@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_bottom_r1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!-- 查勘员底部导航 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_main_bottom_r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bg" >
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp" >
+
+            <Button
+                android:id="@+id/activity_main_bottom_task"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tab1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/activity_main_bottom_upload"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tab2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/layout2" >
+
+            <Button
+                android:id="@+id/activity_main_bottom_more"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tab3" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
